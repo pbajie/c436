@@ -27,7 +27,7 @@ export class FlightComponent implements OnInit {
 
 
   onSubmit(form): void {
-    this.fg = 'flight price:' + (form.value.nums * 150) + '$';
+    this.fg = 'flight price:' + (form.value.nums * 150).toString() + '$';
     console.log(form.value.nums * 150 + '$');
   }
 }

@@ -2,7 +2,7 @@
   Revision of class registration extended to transformation (|)
   #name *ngIf [ngClass]
 -->
-<form #myForm="ngForm" (ngSubmit)="myForm.form.valid && onSubmit(myForm)" >
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" >
   <div class="form-row">
     <div class="form-group col-md-4 mb-3">
       <label>OriginalFlight</label>
@@ -12,8 +12,8 @@
     </div>
     <div class="form-row">
     <div class="form-group col-md-4 mb-3">
-      <label>DetinationFlight</label>
-      <input type="text" class="form-control" name="DetinationFlight" [(ngModel)]="model.destinationfight"
+      <label>DestinationFlight</label>
+      <input type="text" class="form-control" name="DestinationFlight" [(ngModel)]="model.destinationfight"
         [ngClass]="{ 'is-invalid': myForm.submitted }" email required>
 
 
