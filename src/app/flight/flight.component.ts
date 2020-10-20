@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class Flight {
-  public orginalAirpot: string;
-  public destinationAirport: string;
+  public orginalFlight: string;
+  public destinationFlight: string;
 
   public regdate: Date;
   public nums: number;
