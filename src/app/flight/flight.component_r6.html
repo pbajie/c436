@@ -7,14 +7,14 @@
     <div class="form-group col-md-4 mb-3">
       <label>OriginalFlight</label>
       <input type="text" name="OriginalFlight"  class="form-control"  [(ngModel)]="model.orginalFlight"
-        [ngClass]="{ 'is-invalid': myForm.submitted  }" required>
+      >
       </div>
     </div>
     <div class="form-row">
     <div class="form-group col-md-4 mb-3">
       <label>DestinationFlight</label>
       <input type="text" class="form-control" name="DestinationFlight" [(ngModel)]="model.destinationFlight"
-        [ngClass]="{ 'is-invalid': myForm.submitted }" email required>
+        >
 
 
     </div>
@@ -41,7 +41,7 @@
   <div class="form-group col-md-4 mb-3">
     <label>Number of travelers</label>
     <input type="number" class="form-control" name="nums" [(ngModel)]="model.nums"
-           [ngClass]="{ 'is-invalid': myForm.submitted }" email required>
+         >
 
     </div>
   </div>
