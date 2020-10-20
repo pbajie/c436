@@ -1,8 +1,17 @@
 form{
-  text-align: center;
+
   background-color: #f1f1f1;
+  border: 1px solid #000;
   padding:20px;
+
+  text-align: center;
+}
+
+.cabin {
+  background-color: green;
 }
 div{
   margin-top: 5%;
 }
+
+
