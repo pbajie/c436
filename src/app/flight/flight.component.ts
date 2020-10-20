@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class Flight {
-  public originalfight: string;
-  public destinationfight: string;
+  public orginalAirpot: string;
+  public destinationAirport: string;
 
   public regdate: Date;
   public nums: number;
+
 
 
 }
@@ -27,7 +28,7 @@ export class FlightComponent implements OnInit {
 
 
   onSubmit(form): void {
-    this.fg = 'flight price:' + (form.value.nums * 150).toString() + '$';
-    console.log(form.value.nums * 150 + '$');
+    this.fg = 'price:' + '$' + (form.value.nums * 150).toString();
+    console.log('$' + form.value.nums * 150 );
   }
 }

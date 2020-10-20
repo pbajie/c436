@@ -5,15 +5,15 @@
 <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" >
   <div class="form-row">
     <div class="form-group col-md-4 mb-3">
-      <label>OriginalFlight</label>
-      <input type="text" name="OriginalFlight" class="form-control" [(ngModel)]="model.originalfight"
+      <label>OriginalAirport</label>
+      <input type="text" name="OriginalAirport"  class="form-control"  [(ngModel)]="model.orginalAirpot"
         [ngClass]="{ 'is-invalid': myForm.submitted  }" required>
       </div>
     </div>
     <div class="form-row">
     <div class="form-group col-md-4 mb-3">
-      <label>DestinationFlight</label>
-      <input type="text" class="form-control" name="DestinationFlight" [(ngModel)]="model.destinationfight"
+      <label>DestinationAirport</label>
+      <input type="text" class="form-control" name="DestinationAirport" [(ngModel)]="model.destinationAirport"
         [ngClass]="{ 'is-invalid': myForm.submitted }" email required>
 
 
