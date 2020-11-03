@@ -1,22 +1,22 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<!doctype html>
-<html lang="en">
 
-<body>
-<h2>Welcome {{title}} !!</h2>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+  <ul class="navbar-nav">
 
-<div class="container">
-  <app-flight></app-flight>
-</div>
-</body>
 
-<h2>Thanks!</h2>
-</html>
+    <div class = "navbar-header">
+      <a class = "navbar-brand" href = "https://www.cdm.depaul.edu/academics/pages/courseinfo.aspx?Subject=CSC&CatalogNbr=436" target="_blank"> </a>
+    </div>
+
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/about']">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/flightInfo']">FlightInfo</a>
+    </li>
+  </ul>
+</nav>
+<br />
+<br />
+<br />
+<router-outlet></router-outlet>
